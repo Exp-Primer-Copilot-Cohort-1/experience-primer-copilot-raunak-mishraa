@@ -1,19 +1,48 @@
 // Create web server
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const morgan = require('morgan');
-// Create app
-const app = express();
-// Add other settings to app
-app.use(morgan('dev'));
-app.use(bodyParser.json());
-app.use(cors());
-// Create comments array
-const comments = require('./comments');
-// Create routes
-app.get('/comments', (req, res) => {
-  res.send(comments);
-});
-app.post('/comments', (req, res) => {
-  const comment = {
+var express = require('express');
+var router = express.Router();
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the posts model
+var Posts = require('../models/posts');
+var PostsModel = Posts.PostsModel;
+
+// Get the users model
+var Users = require('../models/users');
+var UsersModel = Users.UsersModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;
+
+// Get the comments model
+var Comments = require('../models/comments');
+var CommentsModel = Comments.CommentsModel;const express = require('express');
+const router = express.Router();
